@@ -41,12 +41,15 @@ default_args = {
 }
 
 
-def _downloading_data(**kwargs):
+def _downloading_data(ti, **kwargs):
     with open('/tmp/my_file.txt', 'w') as f:
         f.write('my_data')
+    ti.xcom_push(value=43, key='my_key')
 
 
-def _checking_data():
+def _checking_data(ti):
+    my_xcom = ti.xcom_pull(key='my_key', task_ids=['downloading_data'])
+    print(my_xcom)
     print('check data')
 
 
@@ -97,7 +100,7 @@ with DAG(
 
     # best practice (bit-shift operators)
     # downstream
-    #downloading_data >> waiting_for_data >> processing_data
+    downloading_data >> checking_data >> waiting_for_data >> processing_data
     # upstream
     #processing_data << waiting_for_data << downloading_data
 
