@@ -9,7 +9,7 @@
 </p>
 
 <h4 align="center"> 
-	 Status: Not Finished
+	 Status: Finished
 </h4>
 
 <p align="center">
