@@ -21,7 +21,7 @@
 
 ## About
 
-This is some of the material used to study for the <a href="https://academy.astronomer.io/astronomer-certified-apache-airflow-core-exam">Astronomer`s Apache Airflow Certification</a> based on the <a href="https://academy.astronomer.io/astronomer-certification-apache-airflow-fundamentals-preparation">Astronomer Certification Apache Airflow fundamentals preparation course</a> teachings.
+This is some of the material used to study for the <a href="https://academy.astronomer.io/astronomer-certified-apache-airflow-core-exam">Astronomer`s Apache Airflow Certification</a> based on the <a href="https://academy.astronomer.io/astronomer-certification-apache-airflow-fundamentals-preparation">Astronomer Certification Apache Airflow fundamentals preparation course</a> classes ministrated by <a href="https://www.linkedin.com/in/marclamberti/"> Marc Lamberti </a>.
 
 ### Pre-requisites
 
