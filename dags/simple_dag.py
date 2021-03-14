@@ -123,3 +123,5 @@ with DAG(
     # Dependencia cruzada entre as tarefas
     # cross_downstream([downloading_data, checking_data], [
     #                 waiting_for_data, processing_data])
+
+    #chain(downloading_data, [checking_data, waiting_for_data, processing_data])
